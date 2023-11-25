@@ -1,0 +1,8 @@
+# Ignore Playwright directory
+ms-playwright/
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore npm package lock file
+package-lock.json
