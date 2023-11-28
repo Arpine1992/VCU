@@ -14,7 +14,7 @@ export class VSUBasePage extends BasePage {
    * @returns
    */
     async goto() {
-      await this._page.goto(this.url);
+      await this._page.goto(this.url, {timeout: 8000});
       await this.waitForUrl();
       return this;
     }

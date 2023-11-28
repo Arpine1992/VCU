@@ -13,7 +13,7 @@ from datetime import datetime
 
 config_file = "run.config"
 SUIT_IDS = {
-        "@Critical_Path":"87764"
+        "aaa":"1"
     }
 
 ''' Parses and adds command line arguments for script to use for automation run. '''
@@ -236,12 +236,12 @@ def set_run_id(args, parser):
     os.environ["RUN_ID"] = f"{parser.get('config', 'RUN_ID')}"
 
 '''Create test run'''
-def create_test_run(parser, project_id=57):
+def create_test_run(parser, project_id=1):
     run_id = parser.get('config', 'RUN_ID')
     test_rail_integration =  parser.get('config', 'TEST_RAIL_INTEGRATION')
     baseURL = "https://2023testingvsu.testrail.io/"
-    api_key = "l3ys9AtsLnzSdxYCo6mj-cX1bOffvVCagGro.9Lzr"
-    user_name = "kochinyan1992"
+    api_key = "CxZIco7mwtSPEO9y14i1-xfz26e0Swyq3GC2Wegf5"
+    user_name = "kochinyan1992@mail.ru"
     filter= parser.get('config', 'FILTER')
     product_version = os.environ.get("PRODUCT_VERSION")
     now = datetime.now()
@@ -257,7 +257,7 @@ def create_test_run(parser, project_id=57):
         if not run_id:
             try:
                 suite_id = SUIT_IDS[filter]
-                runName = f"Automation | Festival | {parser.get('config', 'ENV')} | {product_version} | {date}"
+                runName = f"Automation | VSU | {date}"
                 get_endpoint = f"/index.php?/api/v2/get_cases/{project_id}&suite_id={suite_id}"
                 get_response = requests.get(baseURL + get_endpoint, headers=headers)
                 get_response.raise_for_status()
