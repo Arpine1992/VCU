@@ -239,8 +239,8 @@ def set_run_id(args, parser):
 def create_test_run(parser, project_id=1):
     run_id = parser.get('config', 'RUN_ID')
     test_rail_integration =  parser.get('config', 'TEST_RAIL_INTEGRATION')
-    baseURL = "https://2023testingvsu.testrail.io/"
-    api_key = "CxZIco7mwtSPEO9y14i1-xfz26e0Swyq3GC2Wegf5"
+    baseURL = "https://vcu2023testing.testrail.io/"
+    api_key = "tFt0pykJrILkS/UYryBH-TB9B3.CCAkuE4rSLm.Fo"
     user_name = "kochinyan1992@mail.ru"
     filter= parser.get('config', 'FILTER')
     product_version = os.environ.get("PRODUCT_VERSION")
