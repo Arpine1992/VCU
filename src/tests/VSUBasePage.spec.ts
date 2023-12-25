@@ -16,7 +16,7 @@ test.describe("@Should perform some Playwright actions", () => {
   });
 
 
-  test("aaa | C2", async () => {
+  test("aaa | C1", async () => {
     await vcuBasePage.goto();
     console.log("aaa:");
   });

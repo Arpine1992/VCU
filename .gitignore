@@ -6,3 +6,9 @@ node_modules/
 
 # Ignore npm package lock file
 package-lock.json
+
+#Ingnore  allure results
+allure-results/
+
+#Ingnore  test results
+test-results/
