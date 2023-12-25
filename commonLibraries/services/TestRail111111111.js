@@ -12,10 +12,10 @@ $(document).ready(function () {
         click: function () {
             alert('Button Clicked!');
 
-            const jenkinsUrl = 'https://five-dryers-hug.loca.lt/job/CloneGitHubAndRun/build';
+            const jenkinsUrl = 'http://localhost:8080/job/CloneGitHubAndRun/build';
             console.log(jenkinsUrl + "jenkinsURL***********************************")
-	        const userName = 'arpine';  // Jenkins username
-            const apiToken = '11b6b502dc6f395aaabced4201b02d0fa7';  // Jenkins API token
+	        const userName = 'arpine_k';  // Jenkins username
+            const apiToken = '11c942cfb611b949f798e2b7cf26434cbd';  // Jenkins API token
 
             const authHeader = 'Basic ' + btoa(`${userName}:${apiToken}`);
 
