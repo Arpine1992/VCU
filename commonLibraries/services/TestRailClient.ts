@@ -8,8 +8,8 @@ import assert from "assert";
  * Updates test run results in TestRail
  */
 export class TestRailClient {
-  private readonly baseURL = "https://vsu2024testing.testrail.io/index.php?/cases/view/".split("index.php?/cases/view/")[0];
-  private readonly apiKey = "gCOtbmDpoVvmta37DdiR-sk9njGp3704wcdMQn5ae";
+  private readonly baseURL = "https://flexiblereportingtool2023.testrail.io/index.php?/cases/view/".split("index.php?/cases/view/")[0];
+  private readonly apiKey = "HQIARmHMyCul.tRtPdgs-38Ngb0igf6q8K8PFB7hX";
   private readonly userName = "kochinyan1992@mail.ru";
   private runId: string;
 

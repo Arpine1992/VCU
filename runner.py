@@ -13,7 +13,7 @@ from datetime import datetime
 
 config_file = "run.config"
 SUIT_IDS = {
-        "aaa":"1"
+        "VSU":"1"
     }
 
 ''' Parses and adds command line arguments for script to use for automation run. '''
@@ -239,8 +239,8 @@ def set_run_id(args, parser):
 def create_test_run(parser, project_id=1):
     run_id = parser.get('config', 'RUN_ID')
     test_rail_integration =  parser.get('config', 'TEST_RAIL_INTEGRATION')
-    baseURL = "https://vsu2024testing.testrail.io/"
-    api_key = "gCOtbmDpoVvmta37DdiR-sk9njGp3704wcdMQn5ae"
+    baseURL = "https://flexiblereportingtool2023.testrail.io/"
+    api_key = "HQIARmHMyCul.tRtPdgs-38Ngb0igf6q8K8PFB7hX"
     user_name = "kochinyan1992@mail.ru"
     filter= parser.get('config', 'FILTER')
     product_version = os.environ.get("PRODUCT_VERSION")
